@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>지원 · 암키</title>
+<title>Support · Amki</title>
 <style>
   :root { color-scheme: light; }
   body {
     margin: 0; padding: 40px 20px 80px;
     background: #FFFFFF; color: #2B2318;
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.75; word-break: keep-all;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.75;
   }
   main { max-width: 680px; margin: 0 auto; }
   h1 { font-size: 26px; letter-spacing: -0.5px; margin: 0 0 6px; }
@@ -18,6 +18,7 @@
   h2 { font-size: 17px; margin: 34px 0 8px; color: #6E5433; }
   p, li { font-size: 15px; color: #4A3B26; }
   ul { padding-left: 20px; }
+  code { background: #F5EEE0; padding: 1px 5px; border-radius: 5px; font-size: 13px; }
   a { color: #8A6A3E; }
   footer {
     margin-top: 48px; padding-top: 20px;
@@ -27,38 +28,39 @@
 </head>
 <body>
 <main>
-  <h1>암키</h1>
-  <p class="lead">지원</p>
+  <h1>Amki</h1>
+  <p class="lead">Support</p>
 
-  <p>계정 없이 바로 쓰는 로컬 우선 플래시카드 앱입니다. 광고도, 인앱 결제도, 로그인도 없습니다.
-     모든 카드와 학습 기록은 여러분의 기기 안에만 저장됩니다.</p>
+  <p>A local-first flashcard app you can use right away — no account, no ads, no in-app
+     purchases, no sign-up. All of your cards and study history stay on your device.</p>
 
-  <h2>카드가 사라졌어요 / 데이터를 옮기고 싶어요</h2>
-  <p>암키는 데이터를 기기에만 저장하기 때문에 앱을 삭제하면 카드도 함께 지워집니다.
-     새 기기로 옮기거나 백업하려면 <strong>설정 &gt; 내보내기</strong>에서 <code>.amki</code>
-     파일을 저장한 뒤, 다른 기기에서 <strong>설정 &gt; 가져오기</strong>로 불러오세요.</p>
+  <h2>My cards are gone / I want to move my data</h2>
+  <p>Amki keeps your data on your device only, so deleting the app also deletes your cards.
+     To back up or move to a new device, go to <strong>Settings &gt; Export</strong> to save
+     an <code>.amki</code> file, then use <strong>Settings &gt; Import</strong> on the other
+     device to load it.</p>
 
-  <h2>Anki 덱을 가져올 수 있나요?</h2>
-  <p>네, <code>.apkg</code> 파일 가져오기를 지원합니다. 텍스트, 기본 줄바꿈, 이미지,
-     <code>[sound:...]</code> 오디오를 추출합니다. 다만 스크립트나 복잡한 스타일(HTML/JS)은
-     실행하지 않으므로 일부 서식은 단순하게 표시될 수 있습니다.</p>
+  <h2>Can I import Anki decks?</h2>
+  <p>Yes, Amki supports importing <code>.apkg</code> files. It extracts text, basic line breaks,
+     images, and <code>[sound:...]</code> audio. Scripts and complex styling (HTML/JS) are not
+     executed, so some formatting may appear simplified.</p>
 
-  <h2>오디오 녹음이 안 돼요</h2>
+  <h2>Audio recording isn't working</h2>
   <ul>
-    <li>iPhone: 설정 &gt; 개인정보 보호 및 보안 &gt; 마이크에서 암키를 켜주세요.</li>
-    <li>Android: 설정 &gt; 앱 &gt; 암키 &gt; 권한 &gt; 마이크를 허용해 주세요.</li>
+    <li>iPhone: Settings &gt; Privacy &amp; Security &gt; Microphone &gt; turn on Amki.</li>
+    <li>Android: Settings &gt; Apps &gt; Amki &gt; Permissions &gt; allow Microphone.</li>
   </ul>
 
-  <h2>복습 일정이 이상해요</h2>
-  <p>암키는 교체 가능한 복습 스케줄러를 사용합니다. 학습 기록(ReviewLog)은 수정·삭제되지 않는
-     방식으로 안전하게 보관되며, 일정은 각 카드의 복습 이력에 따라 계산됩니다.
-     문제가 계속되면 아래 이메일로 어떤 상황이었는지 알려주세요.</p>
+  <h2>My review schedule looks off</h2>
+  <p>Amki uses a pluggable review scheduler. Your review history is stored in an append-only
+     way that can't be modified or deleted, and the schedule is calculated from each card's
+     review history. If the problem persists, email us and describe what happened.</p>
 
-  <h2>문의</h2>
+  <h2>Contact</h2>
   <p><a href="mailto:rudwns708.14564@gmail.com">rudwns708.14564@gmail.com</a></p>
 
   <footer>
-    <a href="./privacy.html">개인정보 처리방침</a>
+    <a href="./privacy.html">Privacy Policy</a>
   </footer>
 </main>
 </body>
